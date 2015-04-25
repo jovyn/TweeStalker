@@ -15,8 +15,8 @@ auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
  
 
-user = api.get_user('7h3_j0k3r')
-log_file = open('tweet_1.log', 'w')
+user = api.get_user('7h3_j0k3r')  # Enter a handle you want to stalk
+log_file = open('tweet_1.log', 'w')  # A log file to list all the users u have been following
 
 print user.screen_name
 log_file.write(user.screen_name + '\n')
